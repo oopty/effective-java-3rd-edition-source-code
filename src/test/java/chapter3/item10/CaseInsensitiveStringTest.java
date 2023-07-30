@@ -18,7 +18,7 @@ class CaseInsensitiveStringTest {
         public void test1() {
             ANY_STRING = "any string";
             CaseInsensitiveString caseInsensitiveString = new CaseInsensitiveString(ANY_STRING);
-            String operand = ANY_STRING;
+            String operand = "Any String";
 
             assertTrue(caseInsensitiveString.equals(operand));
         }

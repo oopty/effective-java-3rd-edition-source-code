@@ -11,7 +11,9 @@ class CloneableItemTest {
     public void cloneTest() {
         CloneableItem cloneableItem = new CloneableItem();
 
+        cloneableItem.setA(3);
+
         cloneableItem.clone();
-        assertTrue(cloneableItem.a == 0);
+        assertTrue(cloneableItem.a == 3);
     }
 }

@@ -12,7 +12,7 @@ public class ColorPoint extends Point{
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o) { // 추이성 위배
         if(!(o instanceof Point)) return false;
         if(!(o instanceof ColorPoint)) return super.equals(o);
         return color.equals(((ColorPoint) o).color) && super.equals(o);

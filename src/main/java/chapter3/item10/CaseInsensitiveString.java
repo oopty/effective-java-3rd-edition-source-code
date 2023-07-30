@@ -13,13 +13,13 @@ public class CaseInsensitiveString {
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o) { // 대칭성 위배
         if (o instanceof CaseInsensitiveString)
             return s.equalsIgnoreCase(
                     ((CaseInsensitiveString) o).s
             );
         if(o instanceof String)
-            return s.equals((String) o);
+            return s.equalsIgnoreCase((String) o);
         return false;
     }
 }
